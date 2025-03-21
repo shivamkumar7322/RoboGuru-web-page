@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px;
+    /* Reduced padding for smaller screens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    /* Remove absolute positioning for better responsiveness */
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow menu items to wrap on smaller screens */
+    gap: 10px;
+    /* Reduced gap */
+}
+
+.down {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a.active {
+    color: #007bff;
+}
+
+.about {
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-p {
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.main {
+    padding: 20px;
+}
+
+.team-member-mission,
+.impact {
+    /* Removed fixed left position to enable natural placement */
+    background-color: #fff;
+    padding: 15px;
+    /* Adjust padding */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    /* Reduced top margin */
+    width: 90%;
+    /* More flexible width */
+    margin-left: auto;
+    /* Center align */
+    margin-right: auto;
+    /* Center align */
+}
+
+.mission {
+    background-image: url(image/robo.jpg);
+    background-size: 100%;
+    background-color: #e9f5ff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.fifty,
+.ten,
+.twinty-five {
+    font-size: 20px;
+    /* Adjusted for readability on smaller screens */
+}
+
+.fifty {
+    font-size: 25px;
+    color: red;
+    font-weight: 800;
+}
+
+.ten {
+    font-size: 25px;
+    color: #007bff;
+    font-weight: 800;
+}
+
+.twinty-five {
+    font-size: 25px;
+    color: #007bff;
+    font-weight: 800;
+}
+
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow statistics to wrap */
+    justify-content: space-around;
+    margin: 15px 0;
+    /* Reduced margin */
+}
+
+.stat {
+    flex: 1 0 45%;
+    /* Allow stats to take 45% width with wrap */
+    max-width: 200px;
+    /* Add max width */
+    text-align: center;
+    font-size: 18px;
+    /* Adjust font size */
+    font-weight: 500;
+    margin: 10px;
+    /* Margin for spacing */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+    .team-member-mission,
+    .impact {
+        width: 95%;
+        /* Reduce width slightly */
+    }
+}
+
+@media (max-width: 480px) {
+    .fifty,
+    .ten,
+    .twinty-five {
+        font-size: 18px;
+        /* Further adjustment for small screens */
+    }
+    .statistics {
+        flex-direction: column;
+        /* Stack statistics vertically */
+    }
+}
+
+.container {
+    padding: 20px;
+}
+
+h2,
+h3,
+h4 {
+    color: #333;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#innovation {
+    background-color: #e0f7fa;
+}
+
+#accessibility {
+    background-color: #fff9c4;
+}
+
+#excellence {
+    background-color: #fce4ec;
+}
+
+.impact-section,
+.team-section {
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 10px;
+    margin: 20px;
+}
+
+.cards,
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card,
+.team-card {
+    background-color: #c1c0c0;
+    border-radius: 25px 9px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px);
+    min-width: 250px;
+}
+
+.card {
+    border: 0.5px solid darkcyan;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.team-cards img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: 50%;
+}
+
+#rate {
+    margin-left: 300px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/*.name {
+    margin-bottom: 50px;
+}*/
+
+.card h3,
+.team-card h4 {
+    margin: 0 0 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #6015ea;
+    color: white;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .card,
+    .team-card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .card,
+    .team-card {
+        flex: 1 1 calc(30% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+    .team-member-mission,
+    .impact {
+        width: 95%;
+        /* Reduce width slightly */
+    }
+}
+
+@media (max-width: 480px) {
+    .fifty,
+    .ten,
+    .twinty-five {
+        font-size: 18px;
+        /* Further adjustment for small screens */
+    }
+    .statistics {
+        flex-direction: column;
+        /* Stack statistics vertically */
+    }
+}
